@@ -1,0 +1,60 @@
+<html>
+
+<head>
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="bower_components/sweetalert/dist/sweetalert.css">
+</head>
+
+
+<body>
+
+  <button class="delete-photo" data-photo-id="56">Delete photo</button>
+
+  <script>
+  sweetAlert("Hello world!")
+
+  // swal("Oops!", "Something went wrong on the page!", "error");
+
+  /*sweetAlert({
+    title: "Oops!",
+    text: "Something went wrong on the page!",
+    type: "error"
+  });*/
+    
+
+  /*$('button.delete-photo').click(function () {
+    var PhotoId=$(this).attr("data-photo-id");
+    deletePhoto(PhotoId);
+  });
+
+  function deletePhoto(photoId) {
+    swal({
+      title:"Are you sure?",
+      text:"Are you sure you want to delete this photo?",
+      showCancelButton:true,
+      closeOnConfirm:false,
+      confirmButtonText:"Yes, delete it!",
+      confirmButtonColor:"red"
+    }, function () {
+      $.ajax({
+        url:"/api/photos/" + photoId,
+        tpe:"DELETE"
+      })
+      .done(function (data) {
+        swal("Deleted!", "Your file was successfully deleted!");
+      })
+      .error(function (data) {
+        swal("Oops", "We couldn't connect to the server!");
+      });
+    });
+
+  };*/
+
+
+
+</script>
+
+</body>
+
+</html>
